@@ -24,8 +24,8 @@ export default {
         border: 'rgba(0,0,0,0.06)',
       },
       fontFamily: {
-        heading: ['"Clash Display"', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        heading: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"Segoe UI"', 'Roboto', 'sans-serif'],
+        body: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', '"SF Pro Text"', '"Segoe UI"', 'Roboto', 'sans-serif'],
       },
       fontSize: {
         'display-xl': ['clamp(3rem, 6vw, 6rem)', { lineHeight: '1.05', letterSpacing: '-0.03em', fontWeight: '700' }],

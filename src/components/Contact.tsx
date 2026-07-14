@@ -56,33 +56,49 @@ export const Contact = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                <div>
-                  <h4 className="text-white/40 text-sm font-medium uppercase tracking-wider mb-2">Plant Location</h4>
-                  <p className="text-white text-base">
-                    Chhata Industrial Area, Mathura
-                    <br />
-                    Uttar Pradesh, India
-                  </p>
-                </div>
+                <div className="grid sm:grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="text-white/40 text-sm font-medium uppercase tracking-wider mb-2">Mathura Plant (Holding Company)</h4>
+                    <p className="text-white text-base">
+                      Suruchi Foods Facility
+                      <br />
+                      Near Mathura, Uttar Pradesh, India
+                    </p>
+                  </div>
 
-                <div>
-                  <h4 className="text-white/40 text-sm font-medium uppercase tracking-wider mb-2">Email</h4>
-                  <a
-                    href="mailto:info@uvfoods.in"
-                    className="text-lime hover:text-lime-light transition-colors text-base group inline-flex items-center gap-2"
-                  >
-                    info@uvfoods.in
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </div>
+                  <div>
+                    <h4 className="text-white/40 text-sm font-medium uppercase tracking-wider mb-2">Rajasthan Plant</h4>
+                    <p className="text-white text-base">
+                      Upcoming Sourcing Unit
+                      <br />
+                      Rajasthan, India (Under Progress)
+                    </p>
+                  </div>
 
-                <div>
-                  <h4 className="text-white/40 text-sm font-medium uppercase tracking-wider mb-2">Corporate Office</h4>
-                  <p className="text-white/70 text-base">
-                    Delhi NCR, India
-                    <br />
-                    <span className="text-white/40 text-sm">By appointment only</span>
-                  </p>
+                  <div>
+                    <h4 className="text-white/40 text-sm font-medium uppercase tracking-wider mb-2">Email & Phone</h4>
+                    <a
+                      href="mailto:uvfoods2021@gmail.com"
+                      className="text-lime hover:text-lime-light transition-colors text-base group inline-flex items-center gap-2 mb-1 block"
+                    >
+                      uvfoods2021@gmail.com
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </a>
+                    <p className="text-white text-base">
+                      Landline: +91-011-4056-5460
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="text-white/40 text-sm font-medium uppercase tracking-wider mb-2">Registered Office</h4>
+                    <p className="text-white/70 text-base">
+                      704, 7th Floor, Deepali Building,
+                      <br />
+                      92 Nehru Place, South Delhi,
+                      <br />
+                      New Delhi – 110019
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             </div>

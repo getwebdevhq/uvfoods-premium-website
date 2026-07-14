@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { SEOHead } from '../components/SEOHead';
 import { PageTransition } from '../components/PageTransition';
-import { Send, CheckCircle2, Phone, Mail, MapPin, Building, Globe } from 'lucide-react';
+import { Send, CheckCircle2, Mail, MapPin, Building, Globe } from 'lucide-react';
 
 export const ContactPage = () => {
   const [formState, setFormState] = useState({
@@ -38,9 +38,9 @@ export const ContactPage = () => {
     <PageTransition>
       <SEOHead
         title="Contact & Corporate Inquiries"
-        description="Get in touch with UV Foods. Connect with our institutional partnership team, schedule a tour of our Chhata manufacturing unit, or visit our corporate office."
+        description="Get in touch with UV Foods. Connect with our institutional partnership team, inquire about our Mathura sourcing capacity, or contact our registered office in New Delhi."
         path="/contact"
-        image="/images/facility.png"
+        image="/images/fresh_farm_hero.png"
       />
 
       {/* Header Banner */}
@@ -200,20 +200,34 @@ export const ContactPage = () => {
 
               <div className="space-y-8">
                 
-                {/* Mathura Unit */}
+                {/* Mathura Sourcing Facility */}
                 <div className="flex gap-5 items-start">
                   <div className="w-12 h-12 rounded-xl bg-forest/5 flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-forest" />
                   </div>
                   <div>
-                    <h3 className="font-heading font-bold text-lg text-forest mb-1">Manufacturing Unit</h3>
+                    <h3 className="font-heading font-bold text-lg text-forest mb-1">Mathura Facility (Holding Group)</h3>
                     <p className="text-muted leading-relaxed text-sm">
-                      National Highway-2, Chhata,<br />
-                      Mathura District, Uttar Pradesh — 281401
+                      Suruchi Foods Private Limited,<br />
+                      Near Mathura District, Uttar Pradesh — 281401
                     </p>
                     <span className="inline-block mt-2 text-xs font-semibold text-muted-green uppercase tracking-wider bg-forest/5 px-2.5 py-1 rounded-md">
-                      280+ MT Daily Production capacity
+                      600+ MT Daily Combined Capacity
                     </span>
+                  </div>
+                </div>
+
+                {/* Rajasthan Upcoming Unit */}
+                <div className="flex gap-5 items-start">
+                  <div className="w-12 h-12 rounded-xl bg-forest/5 flex items-center justify-center flex-shrink-0">
+                    <Globe className="w-6 h-6 text-forest" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-bold text-lg text-forest mb-1">Rajasthan Facility</h3>
+                    <p className="text-muted leading-relaxed text-sm">
+                      Upcoming Sourcing & Processing Unit<br />
+                      Rajasthan, India (Under progress)
+                    </p>
                   </div>
                 </div>
 
@@ -223,10 +237,11 @@ export const ContactPage = () => {
                     <Building className="w-6 h-6 text-forest" />
                   </div>
                   <div>
-                    <h3 className="font-heading font-bold text-lg text-forest mb-1">Corporate Headquarters</h3>
+                    <h3 className="font-heading font-bold text-lg text-forest mb-1">Registered Office</h3>
                     <p className="text-muted leading-relaxed text-sm">
-                      UV Foods Private Limited,<br />
-                      New Delhi Metro Region, India
+                      704, 7th Floor, Deepali Building,<br />
+                      92 Nehru Place, South Delhi,<br />
+                      New Delhi – 110019
                     </p>
                   </div>
                 </div>
@@ -239,12 +254,12 @@ export const ContactPage = () => {
                   <div>
                     <h3 className="font-heading font-bold text-lg text-forest mb-1">Partnership Inquiries</h3>
                     <a
-                      href="mailto:info@uvfoods.in"
+                      href="mailto:uvfoods2021@gmail.com"
                       className="text-muted-green hover:text-olive font-semibold text-base block transition-colors duration-300"
                     >
-                      info@uvfoods.in
+                      uvfoods2021@gmail.com
                     </a>
-                    <span className="text-xs text-muted block mt-1">General & Tender response team</span>
+                    <span className="text-sm text-muted block mt-1">Landline: +91-011-4056-5460</span>
                   </div>
                 </div>
 

@@ -25,7 +25,7 @@ export const Footer = () => {
               </div>
             </Link>
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
-              Modern food manufacturing and nutrition solutions for institutional impact across India.
+              Agricultural sourcing, value-added processing, and compliant institutional supply across India.
             </p>
           </div>
 
@@ -53,10 +53,10 @@ export const Footer = () => {
               Operations
             </h4>
             <div className="space-y-3 text-sm text-white/60">
-              <p>Nutritional Manufacturing</p>
-              <p>Food Fortification</p>
-              <p>Institutional Supply</p>
-              <p>Quality Assurance</p>
+              <p>Agricultural Sourcing</p>
+              <p>Institutional Delivery</p>
+              <p>Value-Added Processing</p>
+              <p>Regulatory Compliance</p>
             </div>
           </div>
 
@@ -66,9 +66,9 @@ export const Footer = () => {
               Contact
             </h4>
             <div className="space-y-3 text-sm text-white/60">
-              <p>Chhata, Mathura, UP</p>
-              <a href="mailto:info@uvfoods.in" className="block hover:text-lime transition-colors">
-                info@uvfoods.in
+              <p>Mathura, UP & Rajasthan</p>
+              <a href="mailto:uvfoods2021@gmail.com" className="block hover:text-lime transition-colors">
+                uvfoods2021@gmail.com
               </a>
             </div>
           </div>

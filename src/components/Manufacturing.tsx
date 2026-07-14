@@ -33,21 +33,21 @@ export const Manufacturing = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
           >
             <p className="text-lg text-muted leading-relaxed max-w-lg">
-              Our manufacturing facility in Chhata, Mathura operates across multiple production lines — combining industrial scale with pharmaceutical-grade precision.
+              UV Foods leverages the massive combined capacity of its holding company, Suruchi Foods, near Mathura, UP, while establishing its own state-of-the-art facility in Rajasthan.
             </p>
           </motion.div>
         </div>
 
         {/* Hero Image */}
         <motion.div
-          className="relative rounded-3xl overflow-hidden mb-12 lg:mb-16 group"
+          className="relative rounded-3xl overflow-hidden mb-12 lg:mb-16 group shadow-lg"
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <img
-            src="/images/manufacturing.png"
-            alt="UV Foods premium manufacturing facility"
+            src="/images/fresh_grains.png"
+            alt="UV Foods premium grains processing"
             className="w-full h-[350px] sm:h-[450px] lg:h-[550px] object-cover transition-transform duration-700 group-hover:scale-[1.03]"
             loading="lazy"
           />
@@ -55,8 +55,8 @@ export const Manufacturing = () => {
 
           {/* Floating capacity badge */}
           <div className="absolute bottom-6 left-6 sm:bottom-8 sm:left-8 glass rounded-2xl px-6 py-4">
-            <div className="text-lime font-heading font-bold text-2xl">280+ MT</div>
-            <div className="text-white/60 text-sm">Daily Production Capacity</div>
+            <div className="text-lime font-heading font-bold text-2xl">600+ MT</div>
+            <div className="text-white/60 text-sm">Combined Daily Capacity</div>
           </div>
         </motion.div>
 

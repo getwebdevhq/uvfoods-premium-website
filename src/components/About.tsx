@@ -29,7 +29,7 @@ export const About = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
-              Building nutrition infrastructure for a healthier India.
+              Nourishing India, One Partnership at a Time.
             </motion.h2>
 
             <motion.div
@@ -38,31 +38,31 @@ export const About = () => {
               transition={{ duration: 0.7, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="space-y-5"
             >
-              <p className="text-lg text-muted leading-relaxed">
-                UV Foods develops and delivers high-quality nutritional food solutions designed for institutional programs, public distribution systems, and large-scale community impact.
+              <p className="text-lg text-muted leading-relaxed text-balance">
+                UV Foods Private Limited operates at the intersection of agricultural sourcing, modern processing, and institutional supply chains — bringing quality food grains and products to millions.
               </p>
-              <p className="text-base text-muted/80 leading-relaxed">
-                With roots tracing back to 1986, our operations combine decades of manufacturing heritage with modern food science — serving millions through government nutrition programs, fortified food production, and sustainable agricultural partnerships.
+              <p className="text-base text-muted/80 leading-relaxed text-balance">
+                Co-managed by experienced entrepreneurs, we draw on the manufacturing power of our holding company, Suruchi Foods Private Limited, which has nearly 40 years of expertise (since 1986) in India's nutritional food sector.
               </p>
             </motion.div>
 
             <motion.div
-              className="mt-10 flex gap-12"
+              className="mt-10 flex gap-8 sm:gap-12"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
               <div>
-                <div className="text-3xl font-heading font-bold text-forest">25+</div>
-                <div className="text-sm text-muted mt-1">Government<br />Partnerships</div>
+                <div className="text-3xl font-heading font-bold text-forest">600+ MT</div>
+                <div className="text-sm text-muted mt-1">Mathura Plant<br />Capacity</div>
               </div>
               <div>
-                <div className="text-3xl font-heading font-bold text-forest">30+</div>
-                <div className="text-sm text-muted mt-1">Nutritional<br />Products</div>
+                <div className="text-3xl font-heading font-bold text-forest">NCCF</div>
+                <div className="text-sm text-muted mt-1">Active Sourcing<br />Partner</div>
               </div>
               <div>
-                <div className="text-3xl font-heading font-bold text-forest">3</div>
-                <div className="text-sm text-muted mt-1">Generations of<br />Leadership</div>
+                <div className="text-3xl font-heading font-bold text-forest">1986</div>
+                <div className="text-sm text-muted mt-1">Group Founding<br />Year</div>
               </div>
             </motion.div>
 
@@ -91,8 +91,8 @@ export const About = () => {
           >
             <div className="relative rounded-3xl overflow-hidden group">
               <img
-                src="/images/community.png"
-                alt="Community nutrition programs in India"
+                src="/images/fresh_fruits.png"
+                alt="Fresh organic agricultural produce and fruits"
                 className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />
@@ -108,10 +108,10 @@ export const About = () => {
             >
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-3 h-3 rounded-full bg-lime" />
-                <span className="text-xs font-semibold text-forest uppercase tracking-wider">Since 1986</span>
+                <span className="text-xs font-semibold text-forest uppercase tracking-wider">Quality First</span>
               </div>
               <p className="text-sm text-muted leading-snug">
-                Three generations committed to fighting hunger and malnutrition.
+                Supplying premium agricultural products direct from farmers to market.
               </p>
             </motion.div>
           </motion.div>

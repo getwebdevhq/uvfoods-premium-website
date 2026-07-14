@@ -6,11 +6,11 @@ import { Heart, Sprout, Shield, Accessibility, Globe, ArrowRight, CheckCircle2 }
 import { Link } from 'react-router-dom';
 
 const iconMap: Record<string, React.ElementType> = {
-  'Responsible Sourcing': Sprout,
-  'Community Nutrition': Heart,
-  'Food Accessibility': Accessibility,
-  'Sustainable Production': Globe,
-  'Future-Focused Infrastructure': Shield,
+  'Empowering local farmers': Sprout,
+  'National Cooperative Supply': Globe,
+  'Nutritional Access': Heart,
+  'Rajasthan Expansion': Accessibility,
+  'Traceability and Safety': Shield,
 };
 
 export const SustainabilityPage = () => {
@@ -27,7 +27,7 @@ export const SustainabilityPage = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] },
+      transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const },
     },
   };
 
@@ -35,18 +35,18 @@ export const SustainabilityPage = () => {
     <PageTransition>
       <SEOHead
         title="Sustainability & Environmental Stewardship"
-        description="Discover UV Foods dedication to green operations, ethical raw-materials sourcing, regional food safety, and community health ecosystems built for future generations."
+        description="Discover UV Foods dedication to green operations, organic raw-materials sourcing, regional food safety, and community health ecosystems built for future generations."
         path="/sustainability"
-        image="/images/sustainability.png"
+        image="/images/fresh_farm_hero.png"
       />
 
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center bg-forest overflow-hidden py-32">
         <div className="absolute inset-0">
           <img
-            src="/images/sustainability.png"
-            alt="Cinematic environmental sustainable farming and food ecosystems"
-            className="w-full h-full object-cover opacity-30"
+            src="/images/fresh_farm_hero.png"
+            alt="Lush green organic agriculture fields"
+            className="w-full h-full object-cover opacity-35"
             loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-forest/50 via-forest/80 to-forest" />
@@ -160,7 +160,7 @@ export const SustainabilityPage = () => {
             <div className="lg:col-span-6 relative">
               <div className="rounded-[28px] overflow-hidden border border-white/10 group relative">
                 <img
-                  src="/images/community.png"
+                  src="/images/fresh_fruits.png"
                   alt="Rural community and organic agricultural practices"
                   className="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-95"
                 />

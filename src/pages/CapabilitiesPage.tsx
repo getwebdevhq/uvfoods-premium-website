@@ -2,53 +2,60 @@ import { motion } from 'framer-motion';
 import { SEOHead } from '../components/SEOHead';
 import { PageTransition } from '../components/PageTransition';
 import { capabilities } from '../data/content';
-import { Wheat, Building2, FlaskConical, Leaf, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Wheat, Building2, Leaf, ShieldCheck, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const iconMap: Record<string, React.ElementType> = {
   Wheat,
   Building2,
-  FlaskConical,
   Leaf,
+  ShieldCheck,
 };
 
 const capabilityDetails = [
   {
-    title: 'Nutritional Manufacturing',
+    title: 'Agricultural Sourcing',
     bullets: [
-      'Fortified flour, blended grains, and custom nutritional flour mixes',
-      'Proprietary infant foods and energy-dense supplementary nutrition',
-      'High-speed packaging with robust shelf-life assurance parameters',
-      'Strict quality validation across each batch processing cycle',
+      'Procurement of premium grains directly from farming communities and local traders',
+      'Zero-middleman supply chain assuring maximum freshness and fair crop pricing',
+      'Rigorous quality verification upon crop intake at sorting terminals',
+      'Direct sourcing capabilities aligned with seasonal regional harvests',
     ],
   },
   {
-    title: 'Institutional Supply',
+    title: 'Institutional Delivery',
     bullets: [
-      'Optimized distribution to 600+ districts across central and state welfare programs',
-      'End-to-end trace-and-track logistics management systems',
-      'Seamless multi-point warehousing under stringent temperature controls',
-      'Dedicated compliance and contract execution teams for institutional clients',
+      'FSSAI state & central licensed delivery systems matching strict standards',
+      'Currently fully activated partnership with NCCF cooperative network',
+      'Reliable execution for institutional projects, welfare tenders, and grocery supply',
+      'Structured logistics management ensuring compliance and timely delivery',
     ],
   },
   {
-    title: 'Food Fortification',
+    title: 'Value-Added Processing',
     bullets: [
-      'Custom Vitamin-Mineral Premix formulation for direct flour/rice enhancement',
-      'State-of-the-art Fortified Rice Kernels (FRK) production line',
-      'Micro-nutrient blending precision conforming to global WHO guidelines',
-      'Rigorous testing in internal and certified third-party laboratories',
+      'Access to Mathura processing plant with 600+ MT daily combined capacity',
+      'Advanced grain cleaning, processing, packaging, and sorting lines',
+      'High hygiene controls with ISO-grade facilities at our holding group',
+      'Developing upcoming proprietary processing unit expansion in Rajasthan',
     ],
   },
   {
-    title: 'Sustainable Operations',
+    title: 'Regulatory Compliance',
     bullets: [
-      'Direct, zero-middleman partnerships with local agricultural farmer clusters',
-      'Resource conservation through advanced low-emission boiler architectures',
-      'Strict zero-waste policy with eco-friendly byproduct processing',
-      'Eco-efficient routing protocols to minimize distribution carbon footprint',
+      'State FSSAI License: 13322010000113 & Central FSSAI License: 13324999000097',
+      'APEDA Registered Trader: Certificate Number 218173',
+      'Importer-Exporter Code (IEC) holder for seamless trade operations',
+      'MSME / Udyam Registered Enterprise: UDYAM-DL-08-0025271',
     ],
   },
+];
+
+const imageMap = [
+  '/images/fresh_farm_hero.png',
+  '/images/honey_extraction.png',
+  '/images/fresh_grains.png',
+  '/images/fresh_fruits.png',
 ];
 
 export const CapabilitiesPage = () => {
@@ -65,7 +72,7 @@ export const CapabilitiesPage = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] },
+      transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] as const },
     },
   };
 
@@ -75,7 +82,7 @@ export const CapabilitiesPage = () => {
         title="Our Capabilities & Food Systems"
         description="Explore UV Foods core capabilities in nutrition infrastructure, large-scale institutional supply, custom food fortification, and sustainable operations."
         path="/capabilities"
-        image="/images/manufacturing.png"
+        image="/images/fresh_grains.png"
       />
 
       {/* Hero Header */}
@@ -153,19 +160,19 @@ export const CapabilitiesPage = () => {
 
                   {/* Graphic / Visual Box Column */}
                   <div className={`lg:col-span-6 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
-                    <div className="relative rounded-[28px] overflow-hidden bg-cream p-12 min-h-[350px] flex items-center justify-center border border-forest/5 hover:border-lime/30 transition-all duration-500 group">
-                      <div className="absolute inset-0 bg-gradient-to-tr from-lime/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                      <div className="text-center space-y-6 relative z-10">
-                        <div className="w-24 h-24 rounded-3xl bg-white shadow-lg mx-auto flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                          <Icon className="w-12 h-12 text-forest" />
+                    <div className="relative rounded-[28px] overflow-hidden h-[400px] border border-forest/5 hover:border-lime/30 transition-all duration-500 group shadow-md">
+                      <img
+                        src={imageMap[index]}
+                        alt={cap.title}
+                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-95"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-forest/20 to-transparent" />
+                      <div className="absolute bottom-8 left-8 right-8 text-white z-10">
+                        <div className="inline-flex w-10 h-10 rounded-xl bg-lime/20 backdrop-blur-md items-center justify-center mb-4 border border-lime/30">
+                          <Icon className="w-5 h-5 text-lime" />
                         </div>
-                        <div>
-                          <div className="text-xs text-muted-green font-semibold uppercase tracking-widest mb-1">UV Foods Capability</div>
-                          <div className="font-heading font-bold text-2xl text-forest">{cap.title}</div>
-                        </div>
-                        <p className="text-sm text-muted/70 max-w-sm mx-auto">
-                          Delivering performance, reliability, and certified safety parameters at full enterprise scale.
-                        </p>
+                        <div className="text-xs text-lime font-semibold uppercase tracking-widest mb-1">UV Foods Capability</div>
+                        <h3 className="font-heading font-bold text-2xl">{cap.title}</h3>
                       </div>
                     </div>
                   </div>
@@ -201,7 +208,7 @@ export const CapabilitiesPage = () => {
               { step: '02', title: 'Automated Processing', desc: 'Pre-cleaning, fine grinding, and controlled fortifications without manual touch.' },
               { step: '03', title: 'Multi-Point Quality Lab', desc: 'Continuous testing of vitamin/mineral load, purity standards, and safety factors.' },
               { step: '04', title: 'Logistical Dispatch', desc: 'Seamless packaging and real-time tracked distribution to regional focal distribution points.' },
-            ].map((p, idx) => (
+            ].map((p) => (
               <div key={p.step} className="relative z-10 space-y-4">
                 <div className="w-12 h-12 rounded-full bg-forest border border-white/20 flex items-center justify-center text-lime font-bold font-heading text-lg shadow-lg">
                   {p.step}

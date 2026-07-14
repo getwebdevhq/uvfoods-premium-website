@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { SEOHead } from '../components/SEOHead';
 import { PageTransition } from '../components/PageTransition';
 import { infrastructurePageContent, certifications } from '../data/content';
-import { Factory, ShieldAlert, FlaskConical, Award, ArrowRight, Activity, Cpu, CheckCircle } from 'lucide-react';
+import { Factory, Award, ArrowRight, Activity, Cpu, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const InfrastructurePage = () => {
@@ -19,13 +19,12 @@ export const InfrastructurePage = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] },
+      transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const },
     },
   };
 
   const getLineIcon = (category: string) => {
-    if (category.includes('Fortification')) return FlaskConical;
-    if (category.includes('Proprietary')) return Cpu;
+    if (category.includes('Rajasthan')) return Cpu;
     return Factory;
   };
 
@@ -33,17 +32,17 @@ export const InfrastructurePage = () => {
     <PageTransition>
       <SEOHead
         title="Our Infrastructure & Facility"
-        description="Take a visual tour of our modern manufacturing facility in Chhata, Mathura. Powered by automated lines, 280+ MT capacity, and ISO 22000 quality standards."
+        description="Sourcing and processing scale across Mathura and Rajasthan. Leveraging over 600 MT daily capacity of holding company Suruchi Foods with FSSAI state & central compliance."
         path="/infrastructure"
-        image="/images/facility.png"
+        image="/images/date_palms.png"
       />
 
       {/* Visual Hero Showcase */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/facility.png"
-            alt="UV Foods modern food manufacturing facility in Mathura"
+            src="/images/date_palms.png"
+            alt="UV Foods date palm agricultural orchard sourcing scale"
             className="w-full h-full object-cover"
             loading="eager"
           />
@@ -57,7 +56,7 @@ export const InfrastructurePage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Chhata, Mathura Facility
+            Mathura & Rajasthan Facilities
           </motion.span>
           <motion.h1
             className="font-heading font-bold text-display-xl text-white mb-8 text-balance max-w-4xl mx-auto leading-tight"
@@ -87,11 +86,11 @@ export const InfrastructurePage = () => {
             <span className="text-sm font-semibold text-muted-green uppercase tracking-widest block mb-4">
               Capacity Dashboard
             </span>
-            <h2 className="font-heading font-bold text-display text-forest">
-              280+ MT Total Daily Capacity
+            <h2 className="font-heading font-bold text-display text-forest text-balance">
+              600+ MT Combined Daily Capacity
             </h2>
-            <p className="text-muted text-lg mt-4 leading-relaxed">
-              Highly specialized production lines operating independently to ensure flexible product combinations and continuous volume delivery.
+            <p className="text-muted text-lg mt-4 leading-relaxed text-balance">
+              By leveraging the established facility of our holding company, Suruchi Foods, in Mathura, and establishing our own processing unit in Rajasthan, we secure incredible scale.
             </p>
           </div>
 
@@ -100,7 +99,7 @@ export const InfrastructurePage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
-            className="grid lg:grid-cols-3 gap-8"
+            className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto"
           >
             {infrastructurePageContent.productionLines.map((line) => {
               const Icon = getLineIcon(line.category);

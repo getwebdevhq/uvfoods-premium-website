@@ -1,14 +1,14 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Wheat, Building2, FlaskConical, Leaf, ArrowRight } from 'lucide-react';
+import { Wheat, Building2, Leaf, ShieldCheck, ArrowRight } from 'lucide-react';
 import { capabilities } from '../data/content';
 import { Link } from 'react-router-dom';
 
 const iconMap: Record<string, React.ElementType> = {
   Wheat,
   Building2,
-  FlaskConical,
   Leaf,
+  ShieldCheck,
 };
 
 export const Capabilities = () => {

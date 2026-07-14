@@ -9,18 +9,18 @@ export const Sustainability = () => {
 
   const pillars = [
     {
-      title: 'Nutrition for All',
-      description: 'Partnering with government programs to deliver fortified, nutritious meals to children and communities across 600+ districts.',
+      title: 'Farmer Procurement',
+      description: 'Procuring high-quality grains directly from local farmers and agricultural traders, securing fair market pricing.',
       accent: 'from-lime/20 to-lime/5',
     },
     {
-      title: 'Empowering Communities',
-      description: 'Creating livelihoods by working with local farmers, suppliers, and self-help groups throughout our supply chain.',
+      title: 'Cooperative Distribution',
+      description: "Direct supply channel through NCCF (National Cooperative Consumers' Federation) to execute welfare tenders.",
       accent: 'from-muted-green/20 to-muted-green/5',
     },
     {
-      title: 'Sustainable Production',
-      description: 'Energy-efficient operations, waste reduction initiatives, and rigorous food safety standards for responsible manufacturing.',
+      title: 'Expanding Sourcing',
+      description: 'Establishing a dedicated processing unit in Rajasthan to increase regional sourcing and agricultural value addition.',
       accent: 'from-olive/20 to-olive/5',
     },
   ];
@@ -30,8 +30,8 @@ export const Sustainability = () => {
       {/* Immersive background */}
       <div className="absolute inset-0">
         <img
-          src="/images/sustainability.png"
-          alt="Sustainable agricultural landscape"
+          src="/images/fresh_farm_hero.png"
+          alt="Fresh agricultural fields and crops"
           className="w-full h-full object-cover"
           loading="lazy"
         />
