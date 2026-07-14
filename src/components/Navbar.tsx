@@ -43,13 +43,13 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <motion.div
-              className="w-10 h-10 rounded-xl bg-forest flex items-center justify-center"
+            <motion.img
+              src="/images/logo.png"
+              alt="UV Foods Logo"
+              className="w-10 h-10 rounded-xl object-contain bg-white p-0.5 border border-forest/15"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-            >
-              <span className="text-lime font-heading font-bold text-sm">UV</span>
-            </motion.div>
+            />
             <div>
               <h1
                 className={`font-heading font-semibold text-base transition-colors duration-300 ${

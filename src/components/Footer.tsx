@@ -16,9 +16,11 @@ export const Footer = () => {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
-                <span className="text-lime font-heading font-bold text-sm">UV</span>
-              </div>
+              <img
+                src="/images/logo.png"
+                alt="UV Foods Logo"
+                className="w-10 h-10 rounded-xl object-contain bg-white p-0.5 border border-white/10"
+              />
               <div>
                 <h3 className="font-heading font-semibold text-white text-base">UV Foods</h3>
                 <p className="text-white/30 text-xs">Private Limited</p>
