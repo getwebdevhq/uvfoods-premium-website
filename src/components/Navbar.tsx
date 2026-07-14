@@ -8,7 +8,6 @@ const navItems = [
   { name: 'Capabilities', path: '/capabilities' },
   { name: 'Infrastructure', path: '/infrastructure' },
   { name: 'Sustainability', path: '/sustainability' },
-  { name: 'Contact', path: '/contact' },
 ];
 
 export const Navbar = () => {

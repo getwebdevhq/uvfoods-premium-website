@@ -5,7 +5,7 @@ const navItems = [
   { name: 'Capabilities', path: '/capabilities' },
   { name: 'Infrastructure', path: '/infrastructure' },
   { name: 'Sustainability', path: '/sustainability' },
-  { name: 'Contact', path: '/contact' },
+  { name: 'Get in Touch', path: '/contact' },
 ];
 
 export const Footer = () => {
